@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Kimono</title>
+	<!-- Swiper css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+	<header class="header">
+    <div class="header__container">
+        <div class="header__inner">
+            <a href="#" class="header__logo"><img src="../../img/logo.svg" alt=""></a>
+            <div class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item nav__item-mark" data-link="link-1">
+                        <a href="#" class="nav__link">Gallery</a>
+                        <ul class="nav__submenu" id="link-1">
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">General</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Classic</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Standart</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Modern</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Tiles</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Masonry</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Filterable</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+                    <li class=" nav__item nav__item-mark" data-link="link-2">
+                        <a href="#" class="nav__link">Pages</a>
+                        <ul class="nav__submenu" id="link-2">
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Services</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Our team</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Booking form</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Prices</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Shop</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Coming soon</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">Login</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+                </ul>
+            </div>
+            <div class="header__contact contact">
+                <div class="contact__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="contact__content">
+                    <div class="contact__close close">
+                        <div class="close__title">Close</div>
+                        <div class="close__icon"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <a href="#" class="contact__logo"><img src="img/logo.svg" alt=""></a>
+                    <div class="contact__instagram instagram">
+                        <div class="instagram__title">// Instagram</div>
+                        <div class="instagram__link">studio_kimono</div>
+                    </div>
+                    <div class="contact__tile tile">
+                        <div class="tile__img"><img src="img/contact/01.jpg" alt=""></div>
+                        <div class="tile__img"><img src="img/contact/02.jpg" alt=""></div>
+                        <div class="tile__img"><img src="img/contact/03.jpg" alt=""></div>
+                        <div class="tile__img"><img src="img/contact/04.jpg" alt=""></div>
+                        <div class="tile__img"><img src="img/contact/05.jpg" alt=""></div>
+                        <div class="tile__img"><img src="img/contact/06.jpg" alt=""></div>
+                    </div>
+                    <div class="contact__info info">
+                        <a href="mailto:kimocare@gmail.com" class="info__contact">kimocare@gmail.com</a>
+                        <a href="#" class="info__contact">28 Street, New York, USA</a>
+                        <a href="tel:+98765432122811" class="info__contact">(+987) 654 321 228 11</a>
+                    </div>
+                    <div class="instagram__title">// Follow Us</div>
+                    <div class="contact__social">
+                        <a href="" class="contact__icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" class="contact__icon"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="" class="contact__icon"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="" class="contact__icon"><i class="fa-brands fa-square-behance"></i></a>
+                        <a href="" class="contact__icon"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact__search"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="burger__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="burger__menu">
+                    <a href="#" class="burger__logo"><img src="../../img/logo.svg" alt=""></a>
+                    <div class="burger__nav">
+                        <div class="burger__title">Menu</div>
+                        <ul class="burger__list">
+                            <div class="burger__item"><a href="#" class="burger__link">Home</a></div>
+                            <div class="burger__item"><a href="#" class="burger__link">Gallery</a></div>
+                            <div class="burger__item"><a href="#" class="burger__link">About us</a></div>
+                            <div class="burger__item"><a href="#" class="burger__link ">Pages</a></div>
+                            <div class="burger__item"><a href="#" class="burger__link">Contact</a></div>
+                            <div class="burger__item"><a href="#" class="burger__link">Blog</a></div>
+                        </ul>
+                    </div>
+                    <div class="burger__contacts">
+                        <div class="burger__title">Contact us</div>
+                        <a href="mailto:kimocare@gmail.com" class="burger__contact">kimocare@gmail.com</a>
+                        <a href="#" class="burger__contact">28 Street, New York, USA</a>
+                        <a href="tel:+98765432122811" class="burger__contact">(+987) 654 321 228 11</a>
+                    </div>
+                    <div class="burger__social">
+                        <div class="burger__title">Find Our Page</div>
+                        <div class="burger__icons">
+                            <a href="" class="burger__icon"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="" class="burger__icon"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="" class="burger__icon"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="" class="burger__icon"><i class="fa-brands fa-square-behance"></i></a>
+                            <a href="" class="burger__icon"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+	<section class="banner">
+    <!-- Оболочка слайдера -->
+    <div class="banner__slider swiper">
+        <!-- Двигающееся часть слайдера -->
+        <div class="banner__wrapper swiper-wrapper">
+            <!-- Слайд -->
+            <div class="banner__slide swiper-slide">
+                <div class="banner__img"><img src="img/main-slider/01.jpg" alt=""></div>
+                <div class="banner__container">
+                    <div class="banner__content">
+                        <div class="banner__subtitle">PHOTOGRAPHY AGENCY</div>
+                        <h1 class="banner__title">Make Portfolio With Kimono Studio</h1>
+                        <p class="banner__text">The talent at kimono runs wide and deep. Across many markets &
+                            typologies,
+                            our team members </p>
+                        <div class="banner__btn ">
+                            <div class="banner__btn-inner">
+                                <div class="banner__btn-title">Book kimono</div>
+                                <div class="banner__btn-icons">
+                                    <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                                    <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="banner__btn btn-op">
+                            <div class="banner__btn-inner">
+                                <div class="banner__btn-title">Explore now</div>
+                                <div class="banner__btn-icons">
+                                    <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                                    <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner__slide swiper-slide">
+                <div class="banner__img"><img src="img/main-slider/02.jpg" alt=""></div>
+                <div class="banner__container">
+                    <div class="banner__content">
+                        <div class="banner__subtitle">PHOTOGRAPHY AGENCY</div>
+                        <h1 class="banner__title">Make Portfolio With Kimono Studio</h1>
+                        <p class="banner__text">The talent at kimono runs wide and deep. Across many markets &
+                            typologies,
+                            our team members </p>
+                        <div class="banner__btn ">
+                            <div class="banner__btn-inner">
+                                <div class="banner__btn-title">Book kimono</div>
+                                <div class="banner__btn-icons">
+                                    <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                                    <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="banner__btn btn-red">
+                            <div class="banner__btn-inner">
+                                <div class="banner__btn-title">Explore now</div>
+                                <div class="banner__btn-icons">
+                                    <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                                    <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner__slide swiper-slide">
+                <div class="banner__img"><img src="img/main-slider/03.jpg" alt=""></div>
+                <div class="banner__container">
+                    <div class="banner__content">
+                        <div class="banner__subtitle">PHOTOGRAPHY AGENCY</div>
+                        <h1 class="banner__title">Make Portfolio With Kimono Studio</h1>
+                        <p class="banner__text">The talent at kimono runs wide and deep. Across many markets &
+                            typologies,
+                            our team members </p>
+                        <div class="banner__btn ">
+                            <div class="banner__btn-inner">
+                                <div class="banner__btn-title">Book kimono</div>
+                                <div class="banner__btn-icons">
+                                    <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                                    <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="banner__btn btn-red">
+                            <div class="banner__btn-inner">
+                                <div class="banner__btn-title">Explore now</div>
+                                <div class="banner__btn-icons">
+                                    <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                                    <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Если нужна пагинация -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Если нужна навигация (влево/вправо) -->
+    <div class="banner__arrows">
+        <button type="button" class="swiper-button-prev prev"></button>
+        <button type="button" class="swiper-button-next next"></button>
+    </div>
+
+    </div>
+</section>
+	<section class="services">
+    <div class="services__decor"><img src="img/services/decor.png" alt=""></div>
+    <div class="services__container">
+        <div class="services__inner">
+            <div class="services__info">
+                <div class="services__titles">
+                    <div class="services__subtitle subtitle">
+                        <span>01 //</span> Services
+                    </div>
+                    <h2 class="services__title title">
+                        Our Photography <span>Services</span>
+                    </h2>
+                </div>
+                <p class="services__text text">we’re deeply passionate
+                    <span>catch your lovely memories in cameras</span>
+                    and Convey your love for every moment of life as a whole.
+                </p>
+            </div>
+            <div class="services__items">
+                <div class="services__item">
+                    <div class="services__icon"><img src="img/services/01.svg" alt=""></div>
+                    <div class="services__num">01</div>
+                    <div class="services__name">Wedding Photography</div>
+                </div>
+                <div class="services__item">
+                    <div class="services__icon"><img src="img/services/02.svg" alt=""></div>
+                    <div class="services__num">02</div>
+                    <div class="services__name">Drone Cinematography</div>
+                </div>
+                <div class="services__item">
+                    <div class="services__icon"><img src="img/services/03.svg" alt=""></div>
+                    <div class="services__num">03</div>
+                    <div class="services__name">Wedding Cinematography</div>
+                </div>
+                <div class="services__item">
+                    <div class="services__icon"><img src="img/services/04.svg" alt=""></div>
+                    <div class="services__num">04</div>
+                    <div class="services__name">Personal Portfolio Shoot</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+	<section class="album">
+    <div class="album__container">
+        <div class="album__info">
+            <div class="album__subtitle subtitle">
+                <span>02 //</span> PHOTO ALBUMS
+            </div>
+            <h2 class="album__title title">
+                Collection of photos <span>All of Your</span> Best Works
+            </h2>
+        </div>
+        <!-- Оболочка слайдера -->
+        <div class="album__slider swiper">
+            <!-- Двигающееся часть слайдера -->
+            <div class="album__wrapper swiper-wrapper">
+                <!-- Слайд -->
+                <div class="album__slide swiper-slide">
+                    <div class="album__img"><img src="img/album/01.jpg" alt=""></div>
+                    <div class="album__signature">
+                        <div class="album__designation">Bright Boho Sunshine</div>
+                        <div class="album__name">By Jonathon Willson</div>
+                    </div>
+                </div>
+                <div class="album__slide swiper-slide">
+                    <div class="album__img"><img src="img/album/02.jpg" alt=""></div>
+                    <div class="album__signature">
+                        <div class="album__designation">California Fall Collection 2023</div>
+                        <div class="album__name">By Jonathon Willson</div>
+                    </div>
+                </div>
+                <div class="album__slide swiper-slide">
+                    <div class="album__img"><img src="img/album/03.jpg" alt=""></div>
+                    <div class="album__signature">
+                        <div class="album__designation">Brown girl next door</div>
+                        <div class="album__name">By Jonathon Willson</div>
+                    </div>
+                </div>
+                <div class="album__slide swiper-slide">
+                    <div class="album__img"><img src="img/album/04.jpg" alt=""></div>
+                    <div class="album__signature">
+                        <div class="album__designation">Fashion next stage</div>
+                        <div class="album__name">By Jonathon Willson</div>
+                    </div>
+                </div>
+                <div class="album__slide swiper-slide">
+                    <div class="album__img"><img src="img/album/05.jpg" alt=""></div>
+                    <div class="album__signature">
+                        <div class="album__designation">Jenifer in green</div>
+                        <div class="album__name">By Jonathon Willson</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Если нужна навигация (влево/вправо) -->
+            <div class="album__nav">
+                <button type="button" class="swiper-button-prev album-prev"></button>
+                <button type="button" class="swiper-button-next album-next"></button>
+            </div>
+
+        </div>
+    </div>
+</section>
+	<section class="about">
+    <div class="about__container">
+        <div class="about__info">
+            <div class="about__titles">
+                <div class="about__subtitle subtitle">
+                    <span>03 //</span> About agency
+                </div>
+                <div class="about__title title">
+                    Kimono captures <span>All of Your</span> beautiful memories
+                </div>
+            </div>
+            <div class="about__btn-inner">
+                <div class="banner__btn btn-red">
+                    <div class="banner__btn-inner">
+                        <div class="banner__btn-title">Book us now</div>
+                        <div class="banner__btn-icons">
+                            <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                            <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="about__cols">
+            <div class="about__left">
+                <div class="about__img"><img src="img/about/01.png" alt=""></div>
+                <div class="banner__btn btn-red">
+                    <div class="banner__btn-inner">
+                        <div class="banner__btn-title">Explore now</div>
+                        <div class="banner__btn-icons">
+                            <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                            <div class="banner__btn-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="about__right">
+                <h3 class="about__name">About Kimono</h3>
+                <p class="about__text about__text-one">Kimono photography Agency runs wide and deep. Across many
+                    markets,
+                    geographies &
+                    typologies, our team members</p>
+                <p class="about__text about__text-two">The talent at kimono runs wide range of services. Across many
+                    markets,
+                    geographies & typologies, our team members are some of the finest people of photographers in the
+                    industry wide and deep. From Across many markets, geographies & boundaries. Hire Kimono in your
+                    event.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+	<section class="team">
+    <div class="team__container">
+        <div class="team__info">
+            <div class="team__titles">
+                <div class="team__subtitle subtitle">
+                    <span>04 //</span> Our team
+                </div>
+                <h2 class="team__title title">
+                    Our Core Team of <span>Photographers</span>
+                </h2>
+            </div>
+            <p class="team__text text">we’re deeply passionate
+                <span>catch your lovely memories in cameras</span>
+                and Convey your love for every moment of life as a whole.
+            </p>
+            <!-- Если нужна навигация (влево/вправо) -->
+            <div class="team__nav">
+                <button type="button" class="swiper-button-prev team-prev"></button>
+                <button type="button" class="swiper-button-next team-next"></button>
+            </div>
+        </div>
+        <!-- Оболочка слайдера -->
+        <div class="team__slider swiper">
+            <!-- Двигающееся часть слайдера -->
+            <div class="team__wrapper swiper-wrapper">
+
+
+                <!-- Слайд -->
+                <div class="team__slide swiper-slide">
+                    <div class="team__img"><img src="img/team/01.jpg" alt=""></div>
+                    <div class="team__name">Maxim Alexhander</div>
+                    <div class="team__prof">CEO, Kimono Agency</div>
+                    <div class="team__socials">
+                        <a href="#" class="team__icon">FB</a>
+                        <a href="#" class="team__icon">IG</a>
+                        <a href="#" class="team__icon">YT</a>
+                        <a href="#" class="team__icon">DR</a>
+
+                    </div>
+                </div>
+                <div class="team__slide swiper-slide">
+                    <div class="team__img"><img src="img/team/02.jpg" alt=""></div>
+                    <div class="team__name">Maxim Alexhander</div>
+                    <div class="team__prof">CEO, Kimono Agency</div>
+                    <div class="team__socials">
+                        <a href="#" class="team__icon">FB</a>
+                        <a href="#" class="team__icon">IG</a>
+                        <a href="#" class="team__icon">YT</a>
+                        <a href="#" class="team__icon">DR</a>
+
+                    </div>
+                </div>
+                <div class="team__slide swiper-slide">
+                    <div class="team__img"><img src="img/team/03.jpg" alt=""></div>
+                    <div class="team__name">Maxim Alexhander</div>
+                    <div class="team__prof">CEO, Kimono Agency</div>
+                    <div class="team__socials">
+                        <a href="#" class="team__icon">FB</a>
+                        <a href="#" class="team__icon">IG</a>
+                        <a href="#" class="team__icon">YT</a>
+                        <a href="#" class="team__icon">DR</a>
+
+                    </div>
+                </div>
+                <div class="team__slide swiper-slide">
+                    <div class="team__img"><img src="img/team/04.jpg" alt=""></div>
+                    <div class="team__name">Maxim Alexhander</div>
+                    <div class="team__prof">CEO, Kimono Agency</div>
+                    <div class="team__socials">
+                        <a href="#" class="team__icon">FB</a>
+                        <a href="#" class="team__icon">IG</a>
+                        <a href="#" class="team__icon">YT</a>
+                        <a href="#" class="team__icon">DR</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+	<section class="portfolio">
+    <div class="portfolio__container">
+        <div class="portfolio__info">
+            <div class="portfolio__titles">
+                <div class="portfolio__subtitle subtitle">
+                    <span>05 //</span> Our Portfolio
+                </div>
+                <h2 class="portfolio__title title">
+                    Kimono captures <span>All of Your</span> beautiful memories
+                </h2>
+            </div>
+        </div>
+        <div class="portfolio__content">
+            <div class="portfolio__inner">
+                <div class="portfolio__img">
+                    <img src="img/portfolio/01.jpg" alt="">
+
+                </div>
+                <div class="portfolio__description">
+                    <div class="portfolio__name">Bright Boho Sunshine</div>
+                    <div class="portfolio__autor">By Jonathon Willson</div>
+                </div>
+            </div>
+            <div class="portfolio__inner">
+                <div class="portfolio__img">
+                    <img src="img/portfolio/02.jpg" alt="">
+
+                </div>
+                <div class="portfolio__description">
+                    <div class="portfolio__name">California Fall Collection 2023</div>
+                    <div class="portfolio__autor">By Jonathon Willson</div>
+                </div>
+            </div>
+            <div class="portfolio__inner">
+                <div class="portfolio__img">
+                    <img src="img/portfolio/03.jpg" alt="">
+
+                </div>
+                <div class="portfolio__description">
+                    <div class="portfolio__name">Brown girl next door</div>
+                    <div class="portfolio__autor">By Jonathon Willson</div>
+                </div>
+            </div>
+            <div class="portfolio__inner">
+                <div class="portfolio__img">
+                    <img src="img/portfolio/04.jpg" alt="">
+
+                </div>
+                <div class="portfolio__description">
+                    <div class="portfolio__name">Fashion next stage</div>
+                    <div class="portfolio__autor">By Jonathon Willson</div>
+                </div>
+            </div>
+            <div class="portfolio__inner">
+                <div class="portfolio__img">
+                    <img src="img/portfolio/05.jpg" alt="">
+
+                </div>
+                <div class="portfolio__description">
+                    <div class="portfolio__name">Jenifer in green</div>
+                    <div class="portfolio__autor">By Jonathon Willson</div>
+                </div>
+            </div>
+            <div class="portfolio__inner">
+                <div class="portfolio__img">
+                    <img src="img/portfolio/06.jpg" alt="">
+
+                </div>
+                <div class="portfolio__description">
+                    <div class="portfolio__name">Sunflower Boho girl</div>
+                    <div class="portfolio__autor">By Jonathon Willson</div>
+                </div>
+            </div>
+            <div class="portfolio__inner">
+                <div class="portfolio__img">
+                    <img src="img/portfolio/07.jpg" alt="">
+
+                </div>
+                <div class="portfolio__description">
+                    <div class="portfolio__name">Sunrise girl</div>
+                    <div class="portfolio__autor">By Jonathon Willson</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+	<section class="testimonials">
+    <div class="testimonials__container">
+        <div class="testimonials__content">
+            <!-- Оболочка слайдера -->
+            <div class="testimonials__slider swiper">
+                <!-- Двигающееся часть слайдера -->
+                <div class="testimonials__wrapper swiper-wrapper">
+                    <!-- Слайд -->
+                    <div class="testimonials__slide swiper-slide">
+                        <div class="testimonials__rating">
+                            <div class="testimonials__stars">
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <div class="testimonials__icon"><i class="fa-solid fa-quote-right"></i></div>
+                        </div>
+                        <p class="testimonials__description"> “I have an amazing photography session with team
+                            kimono photography agency, highly recommended.
+                            They have amazing atmosphere in their studio. Iw’d
+                            love to visit again”</p>
+                        <div class="testimonials__person">
+                            <div class="testimonials__img"><img src="img/testimonials/01.jpg" alt=""></div>
+                            <div class="testimonials__info">
+                                <div class="testimonials__name">Rachel Jackson</div>
+                                <div class="testimonials__loc">New York</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="testimonials__slide swiper-slide">
+                        <div class="testimonials__rating">
+                            <div class="testimonials__stars">
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <div class="testimonials__icon"><i class="fa-solid fa-quote-right"></i></div>
+                        </div>
+                        <p class="testimonials__description"> “I have an amazing photography session with team
+                            kimono photography agency, highly recommended.
+                            They have amazing atmosphere in their studio.</p>
+                        <div class="testimonials__person">
+                            <div class="testimonials__img"><img src="img/testimonials/02.jpg" alt=""></div>
+                            <div class="testimonials__info">
+                                <div class="testimonials__name">Helen Jordan</div>
+                                <div class="testimonials__loc">Chicago</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="testimonials__slide swiper-slide">
+                        <div class="testimonials__rating">
+                            <div class="testimonials__stars">
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                                <div class="testimonials__star"> <i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <div class="testimonials__icon"><i class="fa-solid fa-quote-right"></i></div>
+                        </div>
+                        <p class="testimonials__description"> “I have an amazing photography session with team
+                            kimono photography agency, highly recommended.
+                        </p>
+                        <div class="testimonials__person">
+                            <div class="testimonials__img"><img src="img/testimonials/03.jpg" alt=""></div>
+                            <div class="testimonials__info">
+                                <div class="testimonials__name">Bill Clay</div>
+                                <div class="testimonials__loc">Los Angeles</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!-- Если нужна навигация (влево/вправо) -->
+                <div class="testimonials__nav">
+                    <button type="button" class="swiper-button-prev team-prev"></button>
+                    <button type="button" class="swiper-button-next team-next"></button>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+</section>
+	<section class="amazing">
+    <div class="amazing__container">
+        <div class="amazing__content">
+            <div class="amazing__left">
+                <h2 class="amazing__title">20 Amazing <span>Photographers</span></h2>
+                <p class="amazing__text">The talent at kimono runs wide range of services. Across many markets,
+                    geographies & typologies, our team members are some of the finest people of photographers in the
+                    industry wide and deep. From Across many markets, geographies & boundaries.</p>
+                <div class="amazing__exp">
+                    <div class="amazing__years">15+</div>
+                    <div class="amazing__name"> Years Experience
+                    </div>
+                </div>
+            </div>
+            <div class="amazing__center">
+                <div class="amazing__img"><img src="img/amazing/1.png" alt=""></div>
+            </div>
+            <div class="amazing__right">
+                <div class="amazing__count">
+                    <div class="amazing__num">50+</div>
+                    <div class="amazing__description">Professional Cameras</div>
+                </div>
+                <div class="amazing__count">
+                    <div class="amazing__num">90+</div>
+                    <div class="amazing__description">Photography Props</div>
+                </div>
+                <div class="amazing__count">
+                    <div class="amazing__num">300</div>
+                    <div class="amazing__description">Events Covered</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+	<section class="get">
+    <div class="get__container">
+        <div class="get__content">
+            <div class="get__info">
+                <h2 class="get__title"> Get In Touch</h2>
+                <p class="get__text"> Contact us for a great photography session & beautiful captured moments </p>
+            </div>
+            <div class="get__inputs">
+                <input type="text" class="get__form" placeholder="Name*">
+                <input type="email" class="get__form" placeholder="Email*">
+                <input type="text" class="get__form" placeholder="Subject">
+                <textarea name="message" class="get__textarea" placeholder="Text"></textarea>
+            </div>
+            <button type="submit" class="banner__btn btn-op">Send</button>
+        </div>
+        <div class="get__contacts">
+            <div class="get__contact">
+                <div class="get__icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="get__description">
+                    <div class="get__name">Our Website</div>
+                    <div class="get__link">kimonophotography.com</div>
+                    <a href="" class="get__visit">Visit now</a>
+                </div>
+            </div>
+            <div class="get__contact">
+                <div class="get__icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                <div class="get__description">
+                    <div class="get__name">Book us</div>
+                    <div class="get__link">+123 455 987 994</div>
+                    <a href="" class="get__visit">Call now</a>
+                </div>
+            </div>
+            <div class="get__contact">
+                <div class="get__icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="get__description">
+                    <div class="get__name">Studio Address</div>
+                    <div class="get__link">13 Madison Street, NY, USA</div>
+                    <a href="" class="get__visit">View Map</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="inst">
+    <div class="inst__content">
+        <div class="inst__gallery">
+            <div class="inst__img"><img src="img/instagram/01.jpg" alt=""></div>
+            <div class="inst__img"><img src="img/instagram/02.jpg" alt=""></div>
+            <div class="inst__img"><img src="img/instagram/03.jpg" alt=""></div>
+            <div class="inst__img"><img src="img/instagram/04.jpg" alt=""></div>
+            <div class="inst__img"><img src="img/instagram/05.jpg" alt=""></div>
+        </div>
+        <a href="" class="inst__btn">
+            <div class="inst__icons">
+                <div class="inst__icon"><i class="fa-brands fa-instagram"></i></div>
+                <div class="inst__icon"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+            <div class="inst__title">Follow Us on Instagram</div>
+        </a>
+    </div>
+</section>
+	<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__content">
+            <div class="footer__left">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">About us</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Our team</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Packages</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Gallery</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer__center">
+                <div class="footer__logo"><img src="img/logo.svg" alt=""></div>
+                <div class="footer__title">Sign up for all the latest news and offers </div>
+                <input type="email" class="footer__input" placeholder="Enter your email">
+                <a href="" class="footer__btn">Subscribe</a>
+            </div>
+            <div class="footer__right">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Booking</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Products</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Recent Posts</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Latest News</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+		integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="./js/index.bundle.js"></script>
+</body>
+
+</html>

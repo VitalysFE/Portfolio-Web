@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css?_v=20240817100024" />
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20240817100024" />
+  <!-- AOS ANIMATION -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20240817100024" rel="stylesheet" />
+  <!-- LIGHTBOX GALLERY -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css?_v=20240817100024" />
+  <!-- LEAFLET MAP -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css?_v=20240817100024" />
+  <!-- CUSTOM STYLES -->
+  <link rel="stylesheet" href="css/style.min.css?_v=20240817100024" />
+  <title>title</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+
+    <div class="header__wrapper">
+        <div class="overlay"></div>
+        <div class="header__inner">
+            <div class="burger">
+                <div class="burger__open">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="burger__content">
+                    <div class="burger__logo"><a href="#"><img src="img/logo-white.png" alt="logo"></a></div>
+                    <div class="burger__nav">
+                        <ul class="burger__menu">
+                            <li class="burger__item"><a href="" class="burger__link">Home</a></li>
+                            <li class="burger__item"><a href="" class="burger__link">Pages</a></li>
+                            <li class="burger__item"><a href="" class="burger__link">Blog</a></li>
+                            <li class="burger__item"><a href="" class="burger__link">Portfolio</a></li>
+                            <li class="burger__item"><a href="" class="burger__link">Shop</a></li>
+                            <li class="burger__item"><a href="" class="burger__link">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger__close">
+                        <div class="burger__close-box">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </div>
+                    <div class="burger__search">
+                        <form role="search" autocomplete="off">
+                            <label for="">
+                                <input class="burger__search-field" required type="text" placeholder="Search...">
+                            </label>
+                            <button class="burger__search-btn" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="header__logo"><a href="#"><img src="img/logo-white.png" alt="logo"></a></div>
+            <div class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__item"><a href="#" class="header__link">Home</a></li>
+                    <li class="header__item"><a href="#" class="header__link submenu-btn" data-btn="menu-1">Pages</a>
+                        <ul class="header__submenu submenu-content" id="menu-1">
+                            <li><a href="#" class="submenu__link">About us</a></li>
+                            <li><a href="#" class="submenu__link">Our team</a></li>
+                            <li><a href="#" class="submenu__link">Services</a></li>
+                            <li><a href="#" class="submenu__link">History</a></li>
+                            <li><a href="#" class="submenu__link">Typography</a></li>
+                            <li><a href="#" class="submenu__link">Elements</a></li>
+                            <li><a href="#" class="submenu__link">FAQ's</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__item"><a href="#" class="header__link">Blog</a>
+                    </li>
+                    <li class="header__item"><a href="#" class="header__link">Portfolio</a></li>
+                    <li class="header__item"><a href="#" class="header__link submenu-btn" data-btn="menu-2">Shop</a>
+                        <ul class="header__submenu submenu-content-2" id="menu-2">
+                            <div class="submenu__container">
+                                <div class="submenu__wrapper">
+                                    <div class="submenu-list">
+                                        <div class="submenu__product-name">Shop</div>
+                                        <li><a href="#" class="submenu__link">Products grid</a></li>
+                                        <li><a href="#" class="submenu__link">Single products</a></li>
+                                        <li><a href="#" class="submenu__link">Cart</a></li>
+                                        <li><a href="#" class="submenu__link">Checkout</a></li>
+                                        <li><a href="#" class="submenu__link">Wishlist</a></li>
+                                        <li><a href="#" class="submenu__link">Login-register</a></li>
+                                        <li><a href="#" class="submenu__link">Help centr</a></li>
+                                    </div>
+                                    <div class="submenu__product">
+                                        <div class="submenu__product-img">
+                                            <img src="img/shop/01.jpg" alt="">
+                                            <div class="submenu__cart">
+                                                <div class="submenu__cart-title">Add to cart</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="submenu__product-rating">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                        </div>
+                                        <div class="submenu__product-name">TOWELS SET</div>
+                                        <div class="submenu__product-price">$40.00</div>
+                                    </div>
+                                    <div class="submenu__product">
+                                        <div class="submenu__product-img"><img src="img/shop/02.jpg" alt="">
+                                            <div class="submenu__cart">
+                                                <div class="submenu__cart-title">Add to cart</div>
+                                            </div>
+                                        </div>
+                                        <div class="submenu__product-rating">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                        </div>
+                                        <div class="submenu__product-name">Shaving brush</div>
+                                        <div class="submenu__product-price">$20.00</div>
+                                    </div>
+                                    <div class="submenu__product">
+                                        <div class="submenu__product-img"><img src="img/shop/03.jpg" alt="">
+                                            <div class="submenu__cart">
+                                                <div class="submenu__cart-title">Add to cart</div>
+                                            </div>
+                                        </div>
+                                        <div class="submenu__product-rating">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                        </div>
+                                        <div class="submenu__product-name">Barber trimmer</div>
+                                        <div class="submenu__product-price">$75.00</div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="header__item"><a href="#" class="header__link submenu-btn" data-btn="menu-3">Contacts</a>
+                        <div class="header__submenu submenu-content-2" id="menu-3">
+                            <div class="submenu__container">
+                                <div class="submenu__wrapper">
+                                    <div class="submenu__contact-content">
+                                        <div class="submenu__contact">
+                                            <div class="submenu__product-name">Our contacts</div>
+                                            <a href="#" class="submenu__contact-location">
+                                                <span class="submenu__contact-icon"><i
+                                                        class="fa-solid fa-location-dot"></i></span>
+                                                <span class="submenu__contact-link">27 Division St, New York, NY 10002,
+                                                    USA</span>
+                                            </a>
+
+                                        </div>
+                                        <div class="submenu__contact">
+                                            <div class="submenu__product-name">Mail us</div>
+                                            <a href="mailto:blade.hub@mail.com" class="submenu__contact-mail">
+                                                <span class="submenu__contact-icon"><i
+                                                        class="fa-solid fa-envelope"></i></span>
+                                                <span class="submenu__contact-link">blade.hub@mail.com</span>
+                                            </a>
+                                        </div>
+                                        <div class="submenu__contact">
+                                            <div class="submenu__product-name">Phone us</div>
+                                            <a href="tel:+180012345678" class="submenu__contact-phone">
+                                                <span class="submenu__contact-icon"><i
+                                                        class="fa-solid fa-phone"></i></span>
+                                                <span class="submenu__contact-link">+1 800 123 456 78</span>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="submenu__form">
+                                        <div class="submenu__product-name">Get in tough</div>
+                                        <div class="submenu__form-subtitle">Your email address will not be published.
+                                            Required fields are marked *</div>
+                                        <form action="" class="submenu__form-content">
+                                            <input required type="text" class="submenu__form-input"
+                                                placeholder="Your name">
+                                            <input required type="email" class="submenu__form-input"
+                                                placeholder="Your email">
+                                            <textarea name="" id="" class="submenu__form-input"
+                                                placeholder="Your comment"></textarea>
+                                            <button type="submit" class="btn btn-white">
+                                                <div class="btn-text btn-text-white">Get in touch</div>
+                                                <div class="btn-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div id="map" class="submenu__map">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__search">
+                <form role="search" autocomplete="off">
+                    <label for="">
+                        <input class="header__search-field" required type="text" placeholder="Search...">
+                    </label>
+                    <button class="header__search-btn" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="header__cart">
+                <div class="header__icon header__icon-search">
+                </div>
+                <div class="header__icon header__icon-bag"></div>
+                <div class="toggle__btn open">
+                    <div class="toggle__btn-wrapper">
+                        <div class="toggle__btn-inner">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toggle__wrapper">
+        <div class="toggle__close">
+            <span class="toggle__close-span">
+                <span></span>
+                <span></span>
+            </span>
+        </div>
+        <div class="toggle__info">
+            <div class="toggle__logo"><a href="#"><img src="img/logo-white.png" alt="logo"></a></div>
+            <div class="toggle__title title-1">Great Style. Great Haircuts. Awesome Barbers.</div>
+            <section class="toggle__gallery">
+                <a href="img/gallery/01.jpg" class="toggle__gallery-item"><img class="toggle__gallery-img"
+                        src="img/gallery/01.jpg" alt=""></a>
+                <a href="img/gallery/02.jpg" class="toggle__gallery-item"><img class="toggle__gallery-img"
+                        src="img/gallery/02.jpg" alt=""></a>
+                <a href="img/gallery/03.jpg" class="toggle__gallery-item"><img class="toggle__gallery-img"
+                        src="img/gallery/03.jpg" alt=""></a>
+                <a href="img/gallery/04.jpg" class="toggle__gallery-item"><img class="toggle__gallery-img"
+                        src="img/gallery/04.jpg" alt=""></a>
+                <a href="img/gallery/05.jpg" class="toggle__gallery-item"><img class="toggle__gallery-img"
+                        src="img/gallery/05.jpg" alt=""></a>
+                <a href="img/gallery/06.jpg" class="toggle__gallery-item"><img class="toggle__gallery-img"
+                        src="img/gallery/06.jpg" alt=""></a>
+
+            </section>
+            <div class="toggle__location">
+                <div class="toggle__location-title title-1">Location</div>
+                <li class="toggle__location-adress hours">27 Division St, New York, NY 10002, USA
+                </li>
+                <li class="toggle__location-mail hours"><a href="mailto: blade.hub@mail.com">blade.hub@mail.com</a>
+                </li>
+                <li class="toggle__location-phone hours"><a href="tel:+1800123456789">+1 (800) 123 456
+                        789</a></li>
+            </div>
+            <div class="toggle__hours">
+                <div class="toggle__hours-title title-1">working hours</div>
+                <ul class="toggle__hours-list">
+                    <li class="toggle__hours-time hours"><span>Mon &#8211; Fri:</span> 8.00 &#8211; 19.00</li>
+                    <li class="toggle__hours-time hours"><span>Saturday:</span> 8.00 &#8211; 18.00</li>
+                    <li class="toggle__hours-time hours"><span>Sunday:</span> Closed</li>
+                </ul>
+            </div>
+            <div class="toggle__social">
+                <a href="" class="toggle__social-link"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" class="toggle__social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="toggle__social-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="" class="toggle__social-link"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+
+        </div>
+    </div>
+</header>
+        <section class="banner">
+    <div class="banner__inner">
+        <!-- Оболочка слайдера -->
+        <div class="banner__slider swiper">
+            <!-- Двигающееся часть слайдера -->
+            <div class="banner__wrapper swiper-wrapper">
+                <!-- Слайд -->
+                <div class="banner__slide swiper-slide">
+                    <div class="banner__img"><img src="img/slider/homepage1-1.jpg" alt=""></div>
+                    <div class="banner__container">
+                        <div class="banner__content">
+                            <div class="banner__content-subtitle">Haircut &#38; Shaves</div>
+                            <div class="banner__content-title">Your style stars here.</div>
+                            <div class="banner__content-text">We are located at 1020 Tierra Del Rey, Chula Vista, CA
+                                91910.
+                            </div>
+                            <div class="btn btn-white">
+                                <div class="btn-text btn-text-white">Read more</div>
+                                <div class="btn-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner__slide swiper-slide">
+                    <div class="banner__img"><img src="img/slider/homepage1-2.jpg" alt=""></div>
+                    <div class="banner__container">
+                        <div class="banner__content">
+                            <div class="banner__content-subtitle">Haircut &#38; Shaves</div>
+                            <div class="banner__content-title">Your style stars here.</div>
+                            <div class="banner__content-text">We are located at 1020 Tierra Del Rey, Chula Vista, CA
+                                91910.
+                            </div>
+                            <div class="btn btn-white">
+                                <div class="btn-text btn-text-white">Read more</div>
+                                <div class="btn-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner__slide swiper-slide">
+                    <div class="banner__img"><img src="img/slider/homepage1-3.jpg" alt=""></div>
+                    <div class="banner__container">
+                        <div class="banner__content">
+                            <div class="banner__content-subtitle">Haircut &#38; Shaves</div>
+                            <div class="banner__content-title">Your style stars here.</div>
+                            <div class="banner__content-text">We are located at 1020 Tierra Del Rey, Chula Vista, CA
+                                91910.
+                            </div>
+                            <div class="btn btn-white">
+                                <div class="btn-text btn-text-white">Read more</div>
+                                <div class="btn-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Если нужна пагинация -->
+            <div class="swiper-pagination banner-pagination"></div>
+
+        </div>
+    </div>
+</section>
+        <section class="about">
+    <div class="about__container">
+        <div class="about__content">
+            <div class="about__row-inner">
+                <div class="about__row">
+                    <div class="about__img"><img src="img/about/01.png" alt=""></div>
+                    <div class="about__img"><img src="img/about/02.png" alt=""></div>
+                </div>
+                <div class="about__row">
+                    <div class="about__subtitle subtitle">who we are</div>
+                    <div class="about__title title">Get full range of premium services.</div>
+                    <div class="about__text text">Great Style. Great Haircuts. Awesome Barbers. At BladeHub Barbershop,
+                        we
+                        strive to create the traditional barbershop look and feel with the highest level of skill,
+                        service
+                        and style to keep you looking and feeling your best.</div>
+                    <div class="btn btn-black">
+                        <div class="btn-text btn-text-black">Read more</div>
+                        <div class="btn-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="about__row">
+                <div class="about__cards">
+                    <div class="about__card">
+                        <div class="about__card-icon"><img src="img/about/icon-1.png" alt=""></div>
+                        <div class="about__card-title">High-quality services & care</div>
+                        <div class="about__card-text">Our mission is to keep you looking & feeling your best with
+                            BladeHub.
+                        </div>
+                        <div class="btn btn-small">
+                            <div class="btn-text btn-text-small">Read more</div>
+                            <div class="btn-icon btn-icon-small"><i class="fa-solid fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__card-icon"><img src="img/about/icon-2.png" alt=""></div>
+                        <div class="about__card-title">Professional equipment &#38; tools</div>
+                        <div class="about__card-text">Our mission is to keep you looking &#38; feeling your best with
+                            BladeHub.
+                        </div>
+                        <div class="btn btn-small">
+                            <div class="btn-text btn-text-small">Read more</div>
+                            <div class="btn-icon btn-icon-small"><i class="fa-solid fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__card-icon"><img src="img/about/icon-3.png" alt=""></div>
+                        <div class="about__card-title">Highly qualified specialists</div>
+                        <div class="about__card-text">Our mission is to keep you looking &#38; feeling your best with
+                            BladeHub.
+                        </div>
+                        <div class="btn btn-small">
+                            <div class="btn-text btn-text-small">Read more</div>
+                            <div class="btn-icon btn-icon-small"><i class="fa-solid fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__card-icon"><img src="img/about/icon-4.png" alt=""></div>
+                        <div class="about__card-title">Barbershop with a wide range of services </div>
+                        <div class="about__card-text">Our mission is to keep you looking &#38; feeling your best with
+                            BladeHub.
+                        </div>
+                        <div class="btn btn-small">
+                            <div class="btn-text btn-text-small">Read more</div>
+                            <div class="btn-icon btn-icon-small"><i class="fa-solid fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="benefits">
+    <div class="benefits__container">
+        <div class="benefits__info">
+            <div class="benefits__subtitle subtitle">our benefits</div>
+            <div class="benefits__title title">We work for you since 2012.</div>
+            <ul class="benefits__list">
+                <li class="benefits__item">
+                    <div class="benefits__item-icon"><i class="fa-solid fa-check"></i></div>
+                    <div class="benefits__item-text">We work every day without days off and lunch breaks to make you
+                        even better.</div>
+                </li>
+                <li class="benefits__item">
+                    <div class="benefits__item-icon"><i class="fa-solid fa-check"></i></div>
+                    <div class="benefits__item-text">
+                        We provide premium class services and are responsible for the result.</div>
+                </li>
+                <li class="benefits__item">
+                    <div class="benefits__item-icon"><i class="fa-solid fa-check"></i></div>
+                    <div class="benefits__item-text">We hear your wishes and strive to meet your high requirements.
+                    </div>
+                </li>
+                <li class="benefits__item">
+                    <div class="benefits__item-icon"><i class="fa-solid fa-check"></i></div>
+                    <div class="benefits__item-text">
+                        We always appreciate your time, our barbershop offers optimal prices.</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+        <section class="team">
+    <div class="team__container">
+        <div class="team__content">
+            <div class="team__info">
+                <div class="team__subtitle subtitle">explore our team</div>
+                <div class="team__title title">Skilled Hands of a whole team of barbers.</div>
+            </div>
+            <!-- Оболочка слайдера -->
+            <div class="team__slider swiper">
+                <!-- Двигающееся часть слайдера -->
+                <div class="team__wrapper swiper-wrapper">
+                    <!-- Слайд -->
+                    <div class="team__slide swiper-slide">
+                        <div class="team__img"><img src="img/team/01.jpg" alt=""></div>
+                        <div class="team__person">
+                            <div class="team__person-prof">TOP BARBER</div>
+                            <div class="team__person-name">Tomas Finn</div>
+                            <div class="team__social">
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__slide swiper-slide">
+                        <div class="team__img"><img src="img/team/02.jpg" alt=""></div>
+                        <div class="team__person">
+                            <div class="team__person-prof">TOP BARBER</div>
+                            <div class="team__person-name">Alfred Gun</div>
+                            <div class="team__social">
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__slide swiper-slide">
+                        <div class="team__img"><img src="img/team/03.jpg" alt=""></div>
+                        <div class="team__person">
+                            <div class="team__person-prof">TOP BARBER</div>
+                            <div class="team__person-name">Harry Gard</div>
+                            <div class="team__social">
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__slide swiper-slide">
+                        <div class="team__img"><img src="img/team/04.jpg" alt=""></div>
+                        <div class="team__person">
+                            <div class="team__person-prof">TOP BARBER</div>
+                            <div class="team__person-name">Ben Odin</div>
+                            <div class="team__social">
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__slide swiper-slide">
+                        <div class="team__img"><img src="img/team/05.jpg" alt=""></div>
+                        <div class="team__person">
+                            <div class="team__person-prof">TOP BARBER</div>
+                            <div class="team__person-name">Paul Newman</div>
+                            <div class="team__social">
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__slide swiper-slide">
+                        <div class="team__img"><img src="img/team/06.jpg" alt=""></div>
+                        <div class="team__person">
+                            <div class="team__person-prof">TOP BARBER</div>
+                            <div class="team__person-name">Peter Taylor</div>
+                            <div class="team__social">
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="" class="team__social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Если нужна навигация (влево/вправо) -->
+                <button type="button" class="swiper-button-prev team-prev"></button>
+                <button type="button" class="swiper-button-next team-next"></button>
+
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="price">
+    <div class="price__img"><img src="img/price/decor.png" alt=""></div>
+    <div class="price__container">
+        <div class="price__content">
+            <div class="price__left">
+                <ul class="price__list">
+                    <li class="price__item">
+                        <div class="price__item-name">
+                            <div class="price__item-title">Classic Haircut</div>
+                            <div class="price__item-money">$30.00</div>
+                        </div>
+                        <div class="price__item-text">We work every day without days off and lunch breaks</div>
+
+                    </li>
+                    <li class="price__item">
+                        <div class="price__item-name">
+                            <div class="price__item-title">Royal Haircut</div>
+                            <div class="price__item-money">$50.00</div>
+                        </div>
+                        <div class="price__item-text">We work every day without days off and lunch breaks</div>
+
+                    </li>
+                    <li class="price__item">
+                        <div class="price__item-name">
+                            <div class="price__item-title">Beard Trimming</div>
+                            <div class="price__item-money">$25.00</div>
+                        </div>
+                        <div class="price__item-text">We work every day without days off and lunch breaks</div>
+
+                    </li>
+                    <li class="price__item">
+                        <div class="price__item-name">
+                            <div class="price__item-title">Children's Haircut</div>
+                            <div class="price__item-money">$20.00</div>
+                        </div>
+                        <div class="price__item-text">We work every day without days off and lunch breaks</div>
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="price__right">
+                <ul class="price__list">
+                    <li class="price__item">
+                        <div class="price__item-name">
+                            <div class="price__item-title">Classic Haircut</div>
+                            <div class="price__item-money">$30.00</div>
+                        </div>
+                        <div class="price__item-text">We work every day without days off and lunch breaks</div>
+
+                    </li>
+                    <li class="price__item">
+                        <div class="price__item-name">
+                            <div class="price__item-title">Royal Haircut</div>
+                            <div class="price__item-money">$50.00</div>
+                        </div>
+                        <div class="price__item-text">We work every day without days off and lunch breaks</div>
+
+                    </li>
+                    <li class="price__item">
+                        <div class="price__item-name">
+                            <div class="price__item-title">Beard Trimming</div>
+                            <div class="price__item-money">$25.00</div>
+                        </div>
+                        <div class="price__item-text">We work every day without days off and lunch breaks</div>
+
+                    </li>
+                    <li class="price__item">
+                        <div class="price__item-name">
+                            <div class="price__item-title">Children's Haircut</div>
+                            <div class="price__item-money">$20.00</div>
+                        </div>
+                        <div class="price__item-text">We work every day without days off and lunch breaks</div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="portfolio">
+    <div class="portfolio__content">
+        <div class="portfolio__item">
+            <a href="" class="portfolio__img"><img src="img/portfolio/01.jpg" alt=""></a>
+            <div class="portfolio__info">
+                <div class="portfolio__info-subtitle">
+                    <a href="" class="portfolio__info-link">care</a>
+                    <span class="portfolio__info-link">&#8260;&#8260;</span>
+                    <a href="" class="portfolio__info-link">haircut</a>
+                </div>
+                <a href="" class="portfolio__info-title">Shave with razor</a>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <a href="" class="portfolio__img"><img src="img/portfolio/02.jpg" alt=""></a>
+            <div class="portfolio__info">
+                <div class="portfolio__info-subtitle">
+                    <a href="" class="portfolio__info-link">care</a>
+                    <span class="portfolio__info-link">&#8260;&#8260;</span>
+                    <a href="" class="portfolio__info-link">tools</a>
+                </div>
+                <a href="" class="portfolio__info-title">BARBER TECHNIQUES</a>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <a href="" class="portfolio__img"><img src="img/portfolio/03.jpg" alt=""></a>
+            <div class="portfolio__info">
+                <div class="portfolio__info-subtitle">
+                    <a href="" class="portfolio__info-link">tools</a>
+                    <span class="portfolio__info-link">&#8260;&#8260;</span>
+                    <a href="" class="portfolio__info-link">trimming</a>
+                </div>
+                <a href="" class="portfolio__info-title">HAIR DESIGN</a>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <a href="" class="portfolio__img"><img src="img/portfolio/04.jpg" alt=""></a>
+            <div class="portfolio__info">
+                <div class="portfolio__info-subtitle">
+                    <a href="" class="portfolio__info-link">care</a>
+                    <span class="portfolio__info-link">&#8260;&#8260;</span>
+                    <a href="" class="portfolio__info-link">trimming</a>
+                </div>
+                <a href="" class="portfolio__info-title">TOP BARBERSHOP</a>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <a href="" class="portfolio__img"><img src="img/portfolio/05.jpg" alt=""></a>
+            <div class="portfolio__info">
+                <div class="portfolio__info-subtitle">
+                    <a href="" class="portfolio__info-link">care</a>
+                    <span class="portfolio__info-link">&#8260;&#8260;</span>
+                    <a href="" class="portfolio__info-link">haircut</a>
+                </div>
+                <a href="" class="portfolio__info-title">Royal Shave</a>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <a href="" class="portfolio__img"><img src="img/portfolio/06.jpg" alt=""></a>
+            <div class="portfolio__info">
+                <div class="portfolio__info-subtitle">
+                    <a href="" class="portfolio__info-link">haircut</a>
+                    <span class="portfolio__info-link">&#8260;&#8260;</span>
+                    <a href="" class="portfolio__info-link">tools</a>
+                </div>
+                <a href="" class="portfolio__info-title">Modern Barber’s</a>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <a href="" class="portfolio__img"><img src="img/portfolio/07.jpg" alt=""></a>
+            <div class="portfolio__info">
+                <div class="portfolio__info-subtitle">
+                    <a href="" class="portfolio__info-link">tools</a>
+                    <span class="portfolio__info-link">&#8260;&#8260;</span>
+                    <a href="" class="portfolio__info-link">trimming</a>
+                </div>
+                <a href="" class="portfolio__info-title">10 FADE HAIRCUTS</a>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <a href="" class="portfolio__img"><img src="img/portfolio/08.jpg" alt=""></a>
+            <div class="portfolio__info">
+                <div class="portfolio__info-subtitle">
+                    <a href="" class="portfolio__info-link">care</a>
+                    <span class="portfolio__info-link">&#8260;&#8260;</span>
+                    <a href="" class="portfolio__info-link">trimming</a>
+                </div>
+                <a href="" class="portfolio__info-title">Common Mistakes</a>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="services">
+    <div class="services__container">
+        <div class="services__content">
+            <div class="services__info">
+                <div class="services__subtitle subtitle">explore our services</div>
+                <div class="services__title title">we provide premium class services.</div>
+            </div>
+            <div class="services__tab">
+                <ul class="services__tab-nav">
+                    <li class="services__tab-btn active" data-tab="#tab-1">Royal shave</li>
+                    <li class="services__tab-btn" data-tab="#tab-2">Beard trim</li>
+                    <li class="services__tab-btn" data-tab="#tab-3">Men`s Haircut</li>
+                    <li class="services__tab-btn" data-tab="#tab-4">Mustache trim</li>
+                    <li class="services__tab-btn" data-tab="#tab-5">Face care</li>
+                </ul>
+                <div class="services__tab-block active" id="tab-1">
+                    <div class="services__tab-wrapper">
+                        <div class="services__img"><img src="img/services/01.png" alt=""></div>
+                        <div class="services__description">
+                            <div class="services__description-title">Shaving with a dangerous disposable razor using the
+                                classic shaving method.</div>
+                            <div class="services__description-text">Great Style. Great Haircuts. Awesome Barbers. At
+                                Sublime
+                                Barbershop, we strive to create the traditional barbershop look and feel with the
+                                highest
+                                level of skill, service and style to keep you looking and feeling your best.</div>
+                            <div class="btn btn-black">
+                                <div class="btn-text btn-text-black">Read more</div>
+                                <div class="btn-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__tab-block" id="tab-2">
+                    <div class="services__tab-wrapper">
+                        <div class="services__img"><img src="img/services/02.png" alt=""></div>
+                        <div class="services__description">
+                            <div class="services__description-title">
+                                The benefits of using a shaving brush for a closer shave</div>
+                            <div class="services__description-text">Great Style. Great Haircuts. Awesome Barbers. At
+                                Sublime Barbershop, we strive to create the traditional barbershop look and feel with
+                                the highest level of skill, service and style to keep you looking and feeling your best.
+                            </div>
+                            <div class="btn btn-black">
+                                <div class="btn-text btn-text-black">Read more</div>
+                                <div class="btn-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__tab-block" id="tab-3">
+                    <div class="services__tab-wrapper">
+                        <div class="services__img"><img src="img/services/03.png" alt=""></div>
+                        <div class="services__description">
+                            <div class="services__description-title">
+                                Why your stylist's choice of scissors matters for your haircut</div>
+                            <div class="services__description-text">Great Style. Great Haircuts. Awesome Barbers. At
+                                Sublime Barbershop, we strive to create the traditional barbershop look and feel with
+                                the highest level of skill, service and style to keep you looking and feeling your best.
+                            </div>
+                            <div class="btn btn-black">
+                                <div class="btn-text btn-text-black">Read more</div>
+                                <div class="btn-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__tab-block" id="tab-4">
+                    <div class="services__tab-wrapper">
+                        <div class="services__img"><img src="img/services/04.png" alt=""></div>
+                        <div class="services__description">
+                            <div class="services__description-title">
+                                The environmental benefits of choosing a razor over disposable razors</div>
+                            <div class="services__description-text">Great Style. Great Haircuts. Awesome Barbers. At
+                                Sublime Barbershop, we strive to create the traditional barbershop look and feel with
+                                the highest level of skill, service and style to keep you looking and feeling your best.
+                            </div>
+                            <div class="btn btn-black">
+                                <div class="btn-text btn-text-black">Read more</div>
+                                <div class="btn-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__tab-block" id="tab-5">
+                    <div class="services__tab-wrapper">
+                        <div class="services__img"><img src="img/services/05.png" alt=""></div>
+                        <div class="services__description">
+                            <div class="services__description-title">
+                                Why aftershave powder is a must-have for men's grooming routines</div>
+                            <div class="services__description-text">Great Style. Great Haircuts. Awesome Barbers. At
+                                Sublime Barbershop, we strive to create the traditional barbershop look and feel with
+                                the highest level of skill, service and style to keep you looking and feeling your best.
+                            </div>
+                            <div class="btn btn-black">
+                                <div class="btn-text btn-text-black">Read more</div>
+                                <div class="btn-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="testimonials">
+    <div class="testimonials__container">
+        <div class="testimonials__content">
+            <div class="testimonials__left">
+                <div class="testimonials__img"><img src="img/testimonials/01.png" alt=""></div>
+                <div class="testimonials__img"><img src="img/testimonials/02.png" alt=""></div>
+            </div>
+            <div class="testimonials__right">
+                <div class="testimonials__slider swiper">
+                    <!-- Двигающееся часть слайдера -->
+                    <div class="testimonials__wrapper swiper-wrapper">
+                        <!-- Слайд -->
+                        <div class="testimonials__slide swiper-slide">
+                            <p class="testimonials__text">“The Barbers is an affordable, convenient and good quality
+                                place to get my hair cut. It is a friendly, laid back environment with great
+                                professionals”</p>
+                            <h3 class="testimonials__name">Tyler Smith</h3>
+                            <span class="testimonials__client">Client of Barbershop</span>
+                        </div>
+                        <div class="testimonials__slide swiper-slide">
+                            <p class="testimonials__text">“The Barbers is an affordable, convenient and good quality
+                                place to get my hair cut. It is a friendly, laid back environment with great
+                                professionals”</p>
+                            <h3 class="testimonials__name">Billi Reuss</h3>
+                            <span class="testimonials__client">Client of Barbershop</span>
+                        </div>
+                        <div class="testimonials__slide swiper-slide">
+                            <p class="testimonials__text">“The Barbers is an affordable, convenient and good quality
+                                place to get my hair cut. It is a friendly, laid back environment with great
+                                professionals”</p>
+                            <h3 class="testimonials__name">Mikky Peterson</h3>
+                            <span class="testimonials__client">Client of Barbershop</span>
+                        </div>
+                    </div>
+                    <!-- Если нужна пагинация -->
+                    <div class="swiper-pagination testimonials__pagination"></div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="appointment">
+    <div class="appointment__container">
+        <div class="appointment__content">
+            <div class="appointment__off">
+                <div class="appointment__num">15% OFF</div>
+                <div class="appointment__text">on your first appointment.</div>
+            </div>
+            <div class="btn btn-black">
+                <div class="btn-text btn-text-black">Book an Appointment</div>
+                <div class="btn-icon"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="news">
+    <div class="news__container">
+        <div class="news__content">
+            <div class="news__info">
+                <div class="news__subtitle subtitle">our latest news</div>
+                <div class="news__title title">check our barbershop inside stories.</div>
+            </div>
+            <div class="news__slider">
+                <!-- Оболочка слайдера -->
+                <div class="news__slider swiper">
+                    <!-- Двигающееся часть слайдера -->
+                    <div class="news__wrapper swiper-wrapper">
+                        <!-- Слайд -->
+                        <div class="news__slide swiper-slide">
+                            <a href="" class="news__img"><img src="img/news/01.jpg" alt=""></a>
+                            <a href="" class="news__post">Equipment</a>
+                            <div class="news__data">April 21, 2023</div>
+                            <div class="news__name">BEST BARBER TECHNIQUES FOR MEN</div>
+                            <div class="btn btn-small">
+                                <div class="btn-text btn-text-small">Read more</div>
+                                <div class="btn-icon btn-icon-small"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                        <div class="news__slide swiper-slide">
+                            <a href="" class="news__img"><img src="img/news/02.jpg" alt=""></a>
+                            <a href="" class="news__post">Equipment</a>
+                            <div class="news__data">April 21, 2023</div>
+                            <div class="news__name">THE BEST MEN’S HAIR DESIGN TREND TODAY</div>
+                            <div class="btn btn-small">
+                                <div class="btn-text btn-text-small">Read more</div>
+                                <div class="btn-icon btn-icon-small"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                        <div class="news__slide swiper-slide">
+                            <a href="" class="news__img"><img src="img/news/03.jpg" alt=""></a>
+                            <a href="" class="news__post">Tips</a>
+                            <div class="news__data">April 21, 2023</div>
+                            <div class="news__name">HOW TO FIND A TOP NOTCH BARBERSHOP</div>
+                            <div class="btn btn-small">
+                                <div class="btn-text btn-text-small">Read more</div>
+                                <div class="btn-icon btn-icon-small"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                        <div class="news__slide swiper-slide">
+                            <a href="" class="news__img"><img src="img/news/04.jpg" alt=""></a>
+                            <a href="" class="news__post">Hairstyles</a>
+                            <div class="news__data">April 21, 2023</div>
+                            <div class="news__name">Modern Barber’s Collection of the Month</div>
+                            <div class="btn btn-small">
+                                <div class="btn-text btn-text-small">Read more</div>
+                                <div class="btn-icon btn-icon-small"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                        <div class="news__slide swiper-slide">
+                            <a href="" class="news__img"><img src="img/news/05.jpg" alt=""></a>
+                            <a href="" class="news__post">Tools</a>
+                            <div class="news__data">April 21, 2023</div>
+                            <div class="news__name">10 FADE HAIRCUTS THAT ARE RIGHT ON TREND</div>
+                            <div class="btn btn-small">
+                                <div class="btn-text btn-text-small">Read more</div>
+                                <div class="btn-icon btn-icon-small"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Если нужна пагинация -->
+                    <div class="swiper-pagination news__pagination"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__content">
+            <div class="footer__col-1">
+                <div class="footer__logo"><a href="#"><img src="img/logo-white.png" alt="logo"></a></div>
+            </div>
+            <div class="footer__col-2">
+                <div class="footer__title title-1">working hours</div>
+                <ul class="footer__list">
+                    <li class="footer__item hours"><span>Mon – Fri:</span>8.00 – 19.00</li>
+                    <li class="footer__item hours"><span>Saturday:</span>8.00 – 18.00</li>
+                    <li class="footer__item hours"><span>Sunday:</span>Closed</li>
+                </ul>
+            </div>
+            <div class="footer__col-3">
+                <div class="footer__title title-1">location</div>
+                <li class="footer__adress hours">27 Division St, New York, NY 10002, USA
+                </li>
+                <li class="footer__mail hours"><a href="mailto: blade.hub@mail.com">blade.hub@mail.com</a>
+                </li>
+                <li class="footer__location-phone hours"><a href="tel:+1800123456789">+1 (800) 123 456
+                        789</a></li>
+            </div>
+            <div class="footer__col-4">
+                <div class="footer__title title-1">subscribe</div>
+                <form class="footer__inputs">
+                    <input type="email" required class="footer__email" placeholder="Your Email">
+                    <input type="submit" class="footer__submit" value="@">
+                </form>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            Copyright &#64; 2023 BladeHub by WebGeniusLab. All Rights Reserved
+        </div>
+    </div>
+</footer>
+    </div>
+
+
+    <!-- FONT AWESOME -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js?_v=20240817100024"></script>
+<!-- SWIPER -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20240817100024"></script>
+<!-- AOS ANIMATION -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20240817100024"></script>
+<!-- LIGHTBOX GALLERY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js?_v=20240817100024"></script>
+<!-- LEAFLET MAP -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js?_v=20240817100024"></script>
+<!-- CUSTOM JS -->
+<script src="js/app.min.js?_v=20240817100024"></script>
+</body>
+
+</html>
